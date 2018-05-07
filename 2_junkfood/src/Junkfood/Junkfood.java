@@ -2,7 +2,7 @@ package junkfood;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
+//
 class Espiral{
 	String nome;
 	int qtd;
