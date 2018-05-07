@@ -10,7 +10,7 @@
     
 - O que aprendeu e sabe fazer:
 
-    aprendi a fazer os metodos mais ainda um pouco engachado.
+    Aprendi a fazer os metodos mais ainda um pouco engachado.
 
 - O que tem dificuldade ainda:
 
