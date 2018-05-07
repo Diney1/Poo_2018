@@ -1,7 +1,7 @@
 package agiota;
 
 public class Dividas {
-	
+	//
 	public String nome;
 	public float valorDebito;
 	public int id = 0;
@@ -14,7 +14,7 @@ public class Dividas {
 		this.id = id;
 		this.valor_total = valorDebito + valor_total;
 	}
-	//metodo tostring que faz a interação com o usuario
+	//metodo tostring que faz a interaÃ§Ã£o com o usuario
 	public String toString() {
 		return  " id: " +id+ " nome: " +nome+ " valor: " +valorDebito+ "";
 	}
