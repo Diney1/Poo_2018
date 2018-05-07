@@ -8,11 +8,11 @@ class Transacao {
 	public int id_transacao = 0;
 	public int id = 0;
 	
-	// Lista de clientes do tipo Cliente e lista de dividas do tipo Dividas
+
 	ArrayList<Cliente> clientes;
 	ArrayList<Dividas> dividas;
 	
-	//Construtor da classe Transacao
+	
 	public Transacao(float dinheiro) {
 		this.dinheiro = dinheiro;
 		clientes = new ArrayList<Cliente>();
@@ -20,23 +20,23 @@ class Transacao {
 		saldo = saldo + dinheiro;
 	}
 	
-	//tostring da classe transacao
+
 	public String toString() {
-		return"Sistema iniciado com: " + saldo + " " + clientes.toString() + "\n";
+		return "Sistema iniciado com: " + saldo + " " + clientes.toString() + "\n";
 	}
 	
-	//metodo que adiciona clientes caso n„o esteja cadastrado
+	//metodo que adiciona clientes caso n√£o esteja cadastrado
 	public void cadastrar_Clientes(String nome, String clienteid) {
 		for (Cliente cli : clientes)
 			if (cli.nome.equals(nome))
-				throw new RuntimeException("Pessoa j· cadastrada!");
+				throw new RuntimeException("Pessoa j√° cadastrada!");
 			else if(cli.cli_Id.equals(clienteid))
-				throw new RuntimeException("Pessoa j· cadastrada com esse id!");
+				throw new RuntimeException("Pessoa j√° cadastrada com esse id!");
 		clientes.add(new Cliente(clienteid, nome));
 	}
 	
 	
-	//metodo que empreta dinheiro se a pessoa estiver  cadastrada no sistema, isso so se o saldo for valido
+	//metodo que empresta dinheiro se a pessoa estiver  cadastrada no sistema, isso somente se o saldo for valido
 	public void emprestar_Dinheiro(String nome, float valor) {
 		for (Cliente cli : clientes)
 			if (cli.nome.equals(nome) ) { 
@@ -48,7 +48,7 @@ class Transacao {
 		throw new RuntimeException("Pessoa ou saldo invalido!");
 	}
 	
-	//metodo que cadastra divida se o saldo n„o for inferior ao valor pedido
+	//metodo que cadastra dividas se o saldo n√£o for inferior ao valor pedido
 	public void cadastrar_Divida(String nome, float valor) {
 		if(valor <= saldo) {
 			saldo = saldo + valor;
@@ -57,7 +57,7 @@ class Transacao {
 			return;
 		}
 		else
-			throw new RuntimeException ("O Saldo È inferior ao valor pedido!");
+			throw new RuntimeException ("O Saldo √© inferior ao valor pedido!");
 			   
 	}
 	
@@ -78,13 +78,13 @@ class Transacao {
 			if (cli.nome.equals(nome)) {
 				System.out.println(cli.mostrar_saldo());
 				while( dividas.get(i).nome.equals(nome)) {
-					       System.out.println(dividas.get(i).toString());
+					       System.out.println( dividas.get(i).toString());
 		                   i++;       
 				}
 			}
 		return;
 		}
-	    throw new RuntimeException("O Cliente n„o foi encontrado!");
+	    throw new RuntimeException("O Cliente n√£o foi encontrado!");
 	}
 	
 	
@@ -93,7 +93,7 @@ class Transacao {
 		for (Cliente cli : clientes)
 			if (cli.nome.equals(nome)) {
 					if (cli.saldo > 0) {
-						cli.saldo = cli.saldo + valor;
+						cli.saldo = saldo + valor;
 						dinheiro = dinheiro + valor;
 						this.dividas.add(new Dividas(nome, valor, id));
 						id++;
@@ -101,20 +101,21 @@ class Transacao {
 					}
 			}
 		
-			throw new RuntimeException("Cliente n„o encontrado!");
+			throw new RuntimeException("Cliente n√£o encontrado!");
 		
 	}
 	
 	//Matar os Clientes
 	public void matar_Cliente(String nome) {
 		for( int i = 0; i < clientes.size(); i++) {
-			if(clientes.get(i).nome.equals(nome)){
+			if(clientes.get(i).nome.equals(nome)) {
+				this.clientes.remove(clientes.get(i));
 				apagar_Dividas(nome);
 		        return;
 			}
 		}
 		
-		throw new RuntimeException("O Cliente n„o foi encontrado!");
+		throw new RuntimeException("O Cliente n√£o foi encontrado!");
 	}
 	
 	//Apagar as dividas
