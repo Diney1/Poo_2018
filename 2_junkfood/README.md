@@ -14,7 +14,7 @@
 
 - O que tem dificuldade ainda:
 
-    tenho dificuldade ainda com relação a implementação dos métodos.
+    tenho dificuldade ainda com relação a implementação dos métodos.
     
 - Quanto tempo levou pra fazer a atividade:
 
