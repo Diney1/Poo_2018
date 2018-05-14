@@ -14,7 +14,7 @@
 
 - O que tem dificuldade ainda:
 
-    Tenho dificuldades com relação ao tratamento de exceções.
+    Tenho dificuldades no tratamento de exceções.
      
 - Quanto tempo levou pra fazer a atividade:
 
