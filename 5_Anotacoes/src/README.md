@@ -1,4 +1,5 @@
 5_anotações
+
 -O que você fez:
 
 Implementei o gerenciador de login, a classe usuarios e a classe controller
@@ -17,5 +18,6 @@ Implementamos a classe controller que no caso recebia os Repositorios de usuario
    Tenho dificuldade no controller.
 
 -Quanto tempo levou pra fazer a atividade:
+
  3 horas  
   
