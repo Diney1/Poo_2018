@@ -9,9 +9,11 @@ Fiz de dupla com a Kamyla, relativamente esse projeto foi bem fácil porque ele 
 Implementamos a classe controller que no caso recebia os Repositorios de usuarios, notas e também o gerenciador de login, ja deixamos o usuario admin adicionado e a anotacão do mesmo.
 
 -O que aprendeu e sabe fazer:
+
    Aprendi a fazer tudo, mas tenho dificuldade com os comandos do repositorio que no caso precisava sempre da key.
 
 -O que tem dificuldade ainda:
+
    Tenho dificuldade no controller.
 
 -Quanto tempo levou pra fazer a atividade:
