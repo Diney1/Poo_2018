@@ -6,7 +6,8 @@ Fiz as Classes Controller e Conta
 
 -Com quem e como você fez:
 
-Fiz de dupla com a Kamyla
+Fiz de dupla com a Kamyla.
+
 Esse trabalho foi o mais dificil em relacão aos outros porque tinha que fazer muita coisa, basicamente fizemos as classes Cliente, operacao, reaproveitamos as classes repositorio e gerenciador de login, e o controller.
 Na classe operacao tinhamos o construtor e os get e sets, na classe conta voce tinha que fazer os metodos depositar, sacar, transferir e encerrar a conta e fazer os metodos gets e sets, e o tostring pra mostrar o saldo da conta e se ela esta ativa ou não.
 Na classe cliente usamos o implements comparable, compare to, tambem tem o metodo match password pra ver se as senhas correspondem, o addconta pra adcionar uma nova conta ao cliente, o toString que tinha que retornar o idCliente e os gets e sets.
