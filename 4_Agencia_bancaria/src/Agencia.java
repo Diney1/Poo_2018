@@ -10,7 +10,7 @@ public class Agencia {
 	public boolean addCliente(String idCliente) {
 		for (Cliente c : clientes.getAll()) {
 			if (c.getIdCliente().equals(idCliente)) {
-				throw new RuntimeException("Fail: " + idCliente + " j· cadastrado.");
+				throw new RuntimeException("Fail: " + idCliente + " j√° cadastrado.");
 			}
 		}
 		this.clientes.add(new Cliente(idCliente));
@@ -25,7 +25,7 @@ public class Agencia {
 				}
 			}
 		}
-		throw new RuntimeException("Fail: conta " + numero + " n„o existe.");
+		throw new RuntimeException("Fail: conta " + numero + " n√£o existe.");
 	}
 	
 
@@ -35,7 +35,7 @@ public class Agencia {
 				return conta;
 			}
 		}
-		throw new RuntimeException("Fail: conta " + numero + " n„o existe.");
+		throw new RuntimeException("Fail: conta " + numero + " n√£o existe.");
 	}
 	
 	
@@ -68,7 +68,7 @@ public class Agencia {
 				return cli;
 			}
 		}
-		throw new RuntimeException("Fail: " + idCliente + " n„o existe.");
+		throw new RuntimeException("Fail: " + idCliente + " n√£o existe.");
 	}
 
 	public Repositorio<Cliente> getClientes() {
@@ -82,7 +82,7 @@ public class Agencia {
 				return cli;
 			}
 		}
-		throw new RuntimeException("Fail: " + id + " n„os existe.");
+		throw new RuntimeException("Fail: " + id + " n√£os existe.");
 	}
 	
 	public String toString() {
@@ -93,16 +93,25 @@ public class Agencia {
 		return saida;
 	}
 	
-	public void Login(String usuario) {
+	public boolean Login(String usuario) {
 		//se usuario for diferente de nulo
 		if(user != null)
 			throw new RuntimeException("fail: Ja existe alguem logado");
+		if(usuario.equals(null))
+			throw new RuntimeException("fail: √© nulo");
+		
 		//loga usuario
 		for (Cliente cli : clientes.getAll()) {
 			if(cli.getIdCliente().equals(usuario)) {
 				this.user = cli;
+				return true;
+			}
+			else {
+				
+				throw new RuntimeException("fail: Usuario n√£o existe");
 			}
 		}
+		return false;
 	}
 
 	public void Logout() {
