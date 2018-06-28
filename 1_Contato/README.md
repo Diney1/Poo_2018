@@ -6,7 +6,7 @@ Dei uma estudada nos exemplos feitos em sala para assim implementar o trabalho d
 
 - Com quem e como você fez:
 
-Fiz de dupla com a Kamyla, a gente também teve ajuda do monitor, começamos lendo a URL vendo o que pedia em cada classe e construindo o programa procurando entender e assimilar as classes que precisavam ser construidas para o programa funcionar.
+Fiz de dupla com a Kamyla, a gente também teve ajuda do monitor, começamos lendo a UML vendo o que pedia em cada classe e construindo o programa procurando entender e assimilar as classes que precisavam ser construidas para o programa funcionar.
 
 - O que aprendeu e sabe fazer:
 
