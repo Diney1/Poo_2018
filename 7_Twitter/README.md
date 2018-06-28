@@ -5,7 +5,7 @@ mas especificadamente eu fiz a Classe Gerenciador de Tweets e a Classe Controlle
 
 Com quem e como você fez:
 
-Fiz em dupla com o Kamyla, Reaproveitamos o repositorio, na classe Usuarios fizemos um fizemos o construtor onde tem o id e os repositorios 
+Fiz em dupla com a Kamyla, Reaproveitamos o repositorio, na classe Usuarios fizemos um fizemos o construtor onde tem o id e os repositorios 
 seguidores, seguidos, myTweets e timeline e os gets e sets dos mesmos, e depois os metodos de seguir, twittar, darlike, o Tweet foi 
 basicamente o construtor, os gets e sets, o metodo mostrarlikes seguido do toString, o controller a gente reaproveitou de codigos 
 anteriores e foi apenas ajeitando.
